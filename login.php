@@ -11,9 +11,9 @@
 	
 		if($row[1] == $user){
 			$_SESSION['id']	  = $row[0];
-			$id = $_SESSION['id'];
+			//$id = $_SESSION['id'];
 			$_SESSION['user'] = $user;
-			$_SESSION['pass'] = $pass;
+			//$_SESSION['pass'] = $pass;
 			//$_SESSION['nr']   = $row[3];  //   [ user, pass, nr]
 			ob_start(); 
 			header('location: Welcome.php');

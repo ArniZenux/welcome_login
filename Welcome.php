@@ -3,6 +3,7 @@
 	include('database_connect.php');
 	//include('user.php');
 	$id = $_SESSION['id'];
+	$user = $_SESSION['user'];
 ?>
 
 <!DOCTYPE html>
@@ -36,10 +37,11 @@
 	
 	<hr>
 	<?php
-		$res = $db->query("SELECT * FROM ACCOUNTS WHERE ID='$id';");
+		$res = $db->query("SELECT FIRSTNAME, LASTNAME, SIMANUMER FROM ACCOUNTS, PHONEBOOK WHERE PHONE_FOR = NR AND ID = '$id';");
 		while( $row = $res->fetchArray() ){
-			echo 'First name: '.$row[1].'<br>';
-			echo 'Last name: '.$row[2];
+			echo 'First name: '.$row[0].'<br>';
+			echo 'Last name: '.$row[1].'<br>';
+			echo 'Phonenumer: '.$row[2].'<br>';
 		}
 	?>
 
