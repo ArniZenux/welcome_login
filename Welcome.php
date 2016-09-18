@@ -1,43 +1,14 @@
 <?php
 	session_start();
+	include('header.html');
 	include('database_connect.php');
 	//include('user.php');
 	$id = $_SESSION['id'];
-	$user = $_SESSION['user'];
+	//$user = $_SESSION['user'];
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Dagbók Árna</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/landing-page.css">
-</head>
-<body>
-<div class="container"> 
-	<!--<header>
-	    <div class="row">
-			<div class="col-lg-4">
-				<div class="intro_header_right">
-					<p> Dagbók Árna </p>
-				</div>
-			</div>
-			<div class="col-lg-8">
-				<div class="intro_header_left">
-					<ul class="list">
-						<li><a href="um.html">Um dagbók</a></li>
-						<li><a href="innskra.php">Innskrá</a></li>
-						<li><a href="nyskra.php">Nýskráning</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header>-->
-	
 	<hr>
 	<?php
-		$res = $db->query("SELECT FIRSTNAME, LASTNAME, SIMANUMER FROM ACCOUNTS, PHONEBOOK WHERE PHONE_FOR = NR AND ID = '$id';");
+		$res = $db->query("SELECT FIRSTNAME, LASTNAME, SIMANUMER FROM ACCOUNTS, PHONEBOOK, OWN WHERE ID = ID_ACC AND ID_PHONE = NR AND ID = '$id';");
 		while( $row = $res->fetchArray() ){
 			echo 'First name: '.$row[0].'<br>';
 			echo 'Last name: '.$row[1].'<br>';

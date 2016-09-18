@@ -1,34 +1,8 @@
 <?php
-	include("login.php");
+	include('login.php');
+	include('header.html');
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Welcome</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/landing-page.css">
-</head>
-<body>
-<div class="container"> 
-<!--	<header>
-	    <div class="row">
-			<div class="col-lg-4">
-				<div class="intro_header_right">
-					<a href="index.php">Dagbók Árna</a>
-				</div>
-			</div>
-			<div class="col-lg-8">
-				<div class="intro_header_left">
-					<ul class="list">
-						<li><a href="um.html">Um dagbók</a></li>
-						<li><a href="innskra.php">Innskrá</a></li>
-						<li><a href="nyskra.php">Nýskráning</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header> --> 
+
 
 	<hr>
 	<?php
@@ -62,8 +36,6 @@
       </div>
     </div>
  </div>
-<footer>
-	
-</footer>
-</body>
-</html>
+ <?php
+ include('footer.html');
+ ?>
