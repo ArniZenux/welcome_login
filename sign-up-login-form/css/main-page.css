@@ -57,9 +57,32 @@ body{
   text-align: left;
   color: #ffffff;
   font-weight: 300;
-  margin: 0 0 40px;
- 
+  margin: 0 10 20px;
 }
+
+.form-order {
+  background: rgba(19, 25, 47, 0.9);
+  padding: 10px;
+  margin: 10px ;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+table {
+  width: 100%;
+  color: #ffffff;
+  font-size: 15px;
+  margin: 1 1 10px;
+}
+
+table .nr {
+	width: 10%;
+}
+
+table .project {
+	width: 70%;
+}
+
 
 
 
