@@ -21,24 +21,6 @@ a:hover {
   color: #179b77;
 }
 
-.form-header {
-  background: rgba(19, 35, 47, 0.9);
-  padding: 40px;
-  max-width: 1224px;
-  margin: 40px ;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-}
-
-.form-body {
-  background: rgba(19, 35, 47, 0.9);
-  padding: 40px;
-  max-width: 1224px;
-  margin: 40px ;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-}
-
 .form {
   background: rgba(19, 35, 47, 0.9);
   padding: 40px;
@@ -50,10 +32,10 @@ a:hover {
 
 .tab-group {
   list-style: none;
-  width: 300px;
+  width: 100%;
   padding: 0;
-  /*margin: 0 0 40px 0;
-    */
+  margin: 0 0 20px 0;
+    
 }
 .tab-group:after {
   content: "";
