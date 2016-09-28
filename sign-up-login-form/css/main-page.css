@@ -53,11 +53,94 @@ body{
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
-label {
-  position: absolute;
+.welcome {
+  color: #ffffff;
+  font-weight: 300;
+  margin-left: 15px;
+}
+
+.order {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+.form-order {
+  background: rgba(19, 25, 47, 0.9);
+  padding: 10px;
+  padding-left: 30px;
+  margin: 13px;
+
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.field-wrap {
+  /*position: relative;
+  */
+  background-color: none;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+label{ 
+  left: 2 0px; 
+  font-size: 22px;
+  color: rgba(255,255,255,0.5);
+  width: 80%;
+}
+
+label .req{
+  margin: 5px;
+  color: #1ab188;
+}
+
+input, textarea{
+  display: block;
+  font-size: 22px; 
+  background: none; 
+  padding-left: 5px; 
+  width: 70%;
+  background-image: none;
+  border: 1px solid #a0b3b0;  
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]{
+    display:inline-block;
+    width:19px;
+    height:14px;
+    margin:-1px 4px 0 0;
+  }
+input[type="submit"]{
+  background-color: #1ab188;
+}
+
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+  height:150px;
+}
+
+/*label {
+   position: absolute;
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
-  left: 13px;
+  float:left;
+  left: 20px;
   color: rgba(255, 255, 255, 0.5);
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -66,9 +149,10 @@ label {
   font-size: 22px;
 }
 label .req {
-  margin: 2px;
+  margin: 5px;
   color: #1ab188;
 }
+
 
 label.active {
   -webkit-transform: translateY(50px);
@@ -76,8 +160,9 @@ label.active {
   left: 2px;
   font-size: 14px;
 }
+
 label.active .req {
-  opacity: 0;
+  opacity: 3;
 }
 
 label.highlight {
@@ -108,32 +193,10 @@ textarea {
   resize: vertical;
 }
 
-.field-wrap {
-  position: relative;
-  margin-bottom: 40px;
-}
 
-.welcome {
-  
-  color: #ffffff;
-  font-weight: 300;
-  margin-left: 15px;
-}
+*/
 
-.order {
-  text-align: center;
-  color: #ffffff;
-  font-weight: 300;
-  margin: 0 auto;
-}
 
-.form-order {
-  background: rgba(19, 25, 47, 0.9);
-  padding: 10px;
-  margin: 13px ;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-}
 
 .price_box{
   background: rgba(19, 25, 47, 0.9);
