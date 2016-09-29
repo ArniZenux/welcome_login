@@ -2,7 +2,6 @@ body{
   background: #c1bdba;	
   font-family: 'Titillium Web', sans-serif;
 }
-
 .form-header {
   list-style: none;
   background: rgba(19, 35, 47, 0.9);
@@ -13,38 +12,33 @@ body{
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
-
 .form-header ul{
 	margin-top: 35px;
 	list-style: none;
 	float: right;	
 }
-
 .form-header li {
 	float: left;
-    font-size: 18px;
-    padding: 5px;
-    margin: 5px;		
+  font-size: 18px;
+  padding: 5px;
+  margin: 5px;		
 }
-
 .form-header li a{
 	display: block;
-    text-decoration: none;
-    background: rgba(160, 179, 176, 0.25);
-    color: #a0b3b0;
-    width: 120px;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-    -webkit-transition: .5s ease;
-    transition: .5s ease;
+  text-decoration: none;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  width: 120px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: .15s ease;
+  transition: .5s ease;
 }
-
 .form-header li a:hover{
 	background: #179b77;
-    color: #ffffff;
+  color: #ffffff;
 }
-
 .form-body {
   background: rgba(19, 35, 47, 0.9);
   padding: 10px;
@@ -52,30 +46,25 @@ body{
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
-
 .welcome {
   color: #ffffff;
   font-weight: 300;
   margin-left: 15px;
 }
-
 .order {
   text-align: center;
   color: #ffffff;
   font-weight: 300;
   margin: 0 auto;
 }
-
 .form-order {
   background: rgba(19, 25, 47, 0.9);
   padding: 10px;
   padding-left: 30px;
   margin: 13px;
-
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
-
 .field-wrap {
   /*position: relative;
   */
@@ -83,19 +72,16 @@ body{
   margin-bottom: 10px;
   width: 100%;
 }
-
 label{ 
   left: 2 0px; 
   font-size: 22px;
   color: rgba(255,255,255,0.5);
   width: 80%;
 }
-
 label .req{
   margin: 5px;
   color: #1ab188;
 }
-
 input, textarea{
   display: block;
   font-size: 22px; 
@@ -109,31 +95,78 @@ input, textarea{
   -webkit-transition: border-color .25s ease, box-shadow .25s ease;
   transition: border-color .25s ease, box-shadow .25s ease;
 }
-
 input:focus, textarea:focus {
   outline: 0;
   border-color: #1ab188;
 }
-
 input[type="checkbox"]{
     display: none;
 }
-
 input[type="checkbox"]{
     display:inline-block;
     width:19px;
     height:14px;
     margin:-1px 4px 0 0;
-  }
-input[type="submit"]{
-  background-color: #1ab188;
 }
-
 textarea {
   border: 2px solid #a0b3b0;
   resize: vertical;
   height:150px;
 }
+input.hnappur{
+  display: block; 
+  text-decoration: none;
+  background: rgba(160, 179, 176, 0.25); 
+  color: #a0b3b0;
+  width: 70%;
+  height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  border : 0px;
+  border-radius: 0px;
+  cursor: pointer;
+  -webkit-transition: .02s ease;
+  transition: .2s ease;
+}
+input.hnappur:focus{
+   background: #179b77;
+}
+.price_box{
+  background: rgba(19, 25, 47, 0.9);
+  padding: 10px;
+  margin: 10px ;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+table {
+  width: 100%;
+  color: #ffffff;
+  font-size: 15px;
+  margin: 1 1 10px;
+}
+
+table .nr {
+  width: 5%;
+}
+
+table .project {
+  width: 45%;
+}
+
+table .project_welcome {
+  width: 78%;
+}
+
+table .status{
+  width: 50%;
+}
+
+table .price {
+  width: 12%;
+}
+
+
 
 /*label {
    position: absolute;
@@ -196,42 +229,6 @@ textarea {
 
 */
 
-
-
-.price_box{
-  background: rgba(19, 25, 47, 0.9);
-  padding: 10px;
-  margin: 10px ;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-}
-
-table {
-  width: 100%;
-  color: #ffffff;
-  font-size: 15px;
-  margin: 1 1 10px;
-}
-
-table .nr {
-	width: 5%;
-}
-
-table .project {
-	width: 45%;
-}
-
-table .project_welcome {
-	width: 78%;
-}
-
-table .status{
-	width: 50%;
-}
-
-table .price {
-	width: 12%;
-}
 
 
 
