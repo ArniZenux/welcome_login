@@ -99,6 +99,17 @@ input:focus, textarea:focus {
   outline: 0;
   border-color: #1ab188;
 }
+.inputfile{
+  padding: 0;
+  width: 70%;
+  opacity: 0.9;
+  overflow: hidden;
+  z-index: -1;
+}
+.inputfile:focus, .inputfile:hover{
+  background-color:red;
+}
+http://tympanus.net/Tutorials/CustomFileInputs/
 input[type="checkbox"]{
     display: none;
 }
